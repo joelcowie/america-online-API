@@ -89,3 +89,4 @@ require 'json'
 
 
 # Park.find_by(name: "Acadia National Park").update(image_url: 'http://www.acadiamagic.com/1200px/otter-cliff-10.jpg')
+Park.find_by(name: "Arches National Park").update(image_url: 'https://media.deseretdigital.com/file/565b6b5783?crop=top:0%7Cleft:0%7Cwidth:1260%7Cheight:670%7Cgravity:Center&quality=55&interlace=none&resize=width:1260&order=resize,crop&c=14&a=e0f131f0')
