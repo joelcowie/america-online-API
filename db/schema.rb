@@ -14,7 +14,13 @@ ActiveRecord::Schema.define(version: 20170214182320) do
 
   create_table "parks", force: :cascade do |t|
     t.string "name"
-    t.string "location"
+    t.string "states"
+    t.string "latLong"
+    t.string "description"
+    t.string "directionsInfo"
+    t.string "directionsUrl"
+    t.string "url"
+    t.string "weatherInfo"
   end
 
   create_table "users", force: :cascade do |t|
