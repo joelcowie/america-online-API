@@ -1,23 +1,91 @@
 require 'json'
 
-# This file should contain all the record creation needed to seed the database with its default values.
-# The data can then be loaded with the rails db:seed command (or created alongside the database with db:setup).
-#
-# Examples:
-#
-#   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
-#   Character.create(name: 'Luke', movie: movies.first)
-adapter = NationalParkAdapter.new
-adapter.populate_park_data
+# adapter = NationalParkAdapter.new
+# adapter.populate_park_data
 
-# array = JSON.parse(File.open('/Users/adam/Development/Flatiron/Immersive/react/finalproject/roadtripper-API/national_park_hash.rb'))
-# puts array[0][1]
-# array.collect do |parks|
-#   # puts parks[0]
-#   Park.create(name: parks['fullName'])
+# Park.find(16).update(states: "California & Nevada")
+
+# Park.find(23).update(states: "North Carolina & Tennessee")
+
+# Park.find(48).update(states: "Idaho, Montana, & Wyoming")
+
+# Park.find(13).destroy
+
+# Park.find(31).update(name: ) #add king canyon data
+
+# Park.find(25).update(name: "Haleakala National Park")
+
+
+# STATE = {
+#   'AL' => 'Alabama',
+#   'AK' => 'Alaska',
+#   'AS' => 'America Samoa',
+#   'AZ' => 'Arizona',
+#   'AR' => 'Arkansas',
+#   'CA' => 'California',
+#   'CO' => 'Colorado',
+#   'CT' => 'Connecticut',
+#   'DE' => 'Delaware',
+#   'DC' => 'District of Columbia',
+#   'FM' => 'Micronesia1',
+#   'FL' => 'Florida',
+#   'GA' => 'Georgia',
+#   'GU' => 'Guam',
+#   'HI' => 'Hawaii',
+#   'ID' => 'Idaho',
+#   'IL' => 'Illinois',
+#   'IN' => 'Indiana',
+#   'IA' => 'Iowa',
+#   'KS' => 'Kansas',
+#   'KY' => 'Kentucky',
+#   'LA' => 'Louisiana',
+#   'ME' => 'Maine',
+#   'MH' => 'Islands1',
+#   'MD' => 'Maryland',
+#   'MA' => 'Massachusetts',
+#   'MI' => 'Michigan',
+#   'MN' => 'Minnesota',
+#   'MS' => 'Mississippi',
+#   'MO' => 'Missouri',
+#   'MT' => 'Montana',
+#   'NE' => 'Nebraska',
+#   'NV' => 'Nevada',
+#   'NH' => 'New Hampshire',
+#   'NJ' => 'New Jersey',
+#   'NM' => 'New Mexico',
+#   'NY' => 'New York',
+#   'NC' => 'North Carolina',
+#   'ND' => 'North Dakota',
+#   'OH' => 'Ohio',
+#   'OK' => 'Oklahoma',
+#   'OR' => 'Oregon',
+#   'PW' => 'Palau',
+#   'PA' => 'Pennsylvania',
+#   'PR' => 'Puerto Rico',
+#   'RI' => 'Rhode Island',
+#   'SC' => 'South Carolina',
+#   'SD' => 'South Dakota',
+#   'TN' => 'Tennessee',
+#   'TX' => 'Texas',
+#   'UT' => 'Utah',
+#   'VT' => 'Vermont',
+#   'VI' => 'Virgin Island',
+#   'VA' => 'Virginia',
+#   'WA' => 'Washington',
+#   'WV' => 'West Virginia',
+#   'WI' => 'Wisconsin',
+#   'WY' => 'Wyoming'
+# }
+#
+# parks = Park.all
+#
+# parks.each do |park|
+#   STATE.each do |abbr, name|
+#     if park['states'] == abbr
+#       park.update(states: name)
+#     end
+#   end
 # end
 
-# Park.create(name:"Glacier National Park", location:"Montana")
-# Park.create(name:"Yellowstone National Park", location:"Wyoming")
-# Park.create(name:"Yosemite National Park", location: "California")
-# Park.create(name:"Zion National Park", location: "Utah")
+
+# Park.find_by(name: "Acadia National Park").update(image_url: 'http://www.acadiamagic.com/1200px/otter-cliff-10.jpg')
