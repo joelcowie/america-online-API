@@ -4,6 +4,8 @@ Rails.application.routes.draw do
     namespace :v1 do
       post '/signup', to: 'users#create'
       post '/trip', to: 'trips#create'
+      post '/login', to: 'sessions#create'
+      post '/current', to: 'current_users#create'
       resources :parks
     end
   end
