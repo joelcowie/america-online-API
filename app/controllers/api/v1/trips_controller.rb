@@ -2,12 +2,13 @@ class Api::V1::TripsController < ApplicationController
   def create
     user_id = Auth.decode(params[:jwt])['user_id']
     @trip = Trip.new(name: params[:trip][:name])
-    binding.pry
     @trip.user = User.find(user_id)
     if @trip.save
-      render json: {name: @trip.name}
+      render json: {trip: @trip, trip_id: @trip.id}
     end
   end
+
+
 
   private
 
