@@ -8,6 +8,20 @@ class Api::V1::TripsController < ApplicationController
     end
   end
 
+  def index
+    user_id = Auth.decode(params[:jwt])['user_id']
+    @trip = Trip.find_by(user_id: user_id)
+    @trippark_all = TripPark.all
+    @tripparks = @trippark_all.select{|trippark| trippark.trip_id == @trip.id}
+    @parks = @tripparks.collect do |trippark|
+      Park.find(trippark.park_id)
+    end
+
+    if @trip
+      render json: {trip: @trip, parks: @parks}
+    end
+  end
+
 
 
   private

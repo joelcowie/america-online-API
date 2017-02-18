@@ -7,6 +7,7 @@ Rails.application.routes.draw do
       post '/login', to: 'sessions#create'
       post '/current', to: 'current_users#create'
       post '/trippark', to: 'trip_parks#create'
+      post '/currenttrip', to: 'trips#index'
       resources :parks
     end
   end
