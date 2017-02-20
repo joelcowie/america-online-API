@@ -5,8 +5,4 @@ class Api::V1::ParksController < ApplicationController
     render json: @parks
   end
 
-  def show
-    
-  end
-
 end
