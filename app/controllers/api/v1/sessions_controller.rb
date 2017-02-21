@@ -4,7 +4,7 @@ class Api::V1::SessionsController < ApplicationController
     if @user && @user.authenticate(params[:password])
       jwt = Auth.encrypt({user_id: @user.id})
       @trip = Trip.find_by(user_id: @user.id)
-      render json: {jwt: jwt, name: @user.name, trip: @trip}
+      render json: {jwt: jwt, name: @user.name, trip: @trip, parks: @trip.parks}
     end
   end
 
