@@ -3,7 +3,8 @@ class Api::V1::SessionsController < ApplicationController
     @user = User.find_by(email: params[:email])
     if @user && @user.authenticate(params[:password])
       jwt = Auth.encrypt({user_id: @user.id})
-      render json: {jwt: jwt, name: @user.name}
+      @trip = Trip.find_by(user_id: @user.id)
+      render json: {jwt: jwt, name: @user.name, trip: @trip}
     end
   end
 
@@ -13,5 +14,5 @@ class Api::V1::SessionsController < ApplicationController
   def user_params
     params.permit(:name, :email, :password, :password_confirmation)
   end
-  
+
 end
