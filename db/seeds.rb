@@ -139,7 +139,7 @@
 # Park.find(47).update(image_url:'http://i.imgur.com/s9azSdF.jpg')
 # Park.find(48).update(image_url:'http://i.imgur.com/r3W4iJA.jpg')
 # Park.find(49).update(image_url:'http://i.imgur.com/yyX6BjF.jpg')
-# Park.find(50).update(image_url:'http://i.imgur.com/4RgIfIs.jpg')
+Park.find(50).update(image_url:'http://i.imgur.com/4RgIfIs.jpg')
 #
 #
 # # missing parks
