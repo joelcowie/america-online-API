@@ -1,4 +1,4 @@
-pics hosted at http://imgur.com/a/3IfVZ
+# pics hosted at http://imgur.com/a/3IfVZ
 
 require 'json'
 
@@ -155,5 +155,5 @@ Park.create(name: 'Redwood National Park', states: 'California', latLong: '', de
 Park.create(name: 'Wrangell-St. Elias National Park', states: 'Alaska', latLong: '', description: 'Wrangell St. Elias is a vast national park that rises from the ocean all the way up to 18,008 ft. Mount St. Elias. At 13.2 million acres, it’s the same size as Yellowstone Nat. Park, Yosemite Nat. Park, and Switzerland combined! Within this wild landscape, people continue to live off the land as they have done for centuries. This is a rugged, beautiful area filled with opportunities for adventure.', directionsInfo: '', directionsUrl: '', url: '', weatherInfo: '', image_url: 'http://media.web.britannica.com/eb-media/17/103217-050-C89AF4B2.jpg')
 
 
-Park.find(50).update(description: 'Follow the paths where ancient native people and pioneers walked. Gaze up at massive sandstone cliffs of cream, pink, and red that soar into a brilliant blue sky. Experience wilderness in a narrow slot canyon. Zion’s unique array of plants and animals will enchant you as you absorb the rich history of the past and enjoy the excitement of present day adventures.')
+# Park.find(50).update(description: 'Follow the paths where ancient native people and pioneers walked. Gaze up at massive sandstone cliffs of cream, pink, and red that soar into a brilliant blue sky. Experience wilderness in a narrow slot canyon. Zion’s unique array of plants and animals will enchant you as you absorb the rich history of the past and enjoy the excitement of present day adventures.')
 Park.find_by(name: 'Kings Canyon National Park').update(name: 'Sequoia & Kings Canyon National Parks', description: "This dramatic landscape testifies to nature's size, beauty, and diversity--huge mountains, rugged foothills, deep canyons, vast caverns, and the world's largest trees. These two parks lie side by side in the southern Sierra Nevada east of the San Joaquin Valley. Weather varies a lot by season and elevation, which ranges from 1,370 to 14,494 feet. Sequoias grow at 5,000 - 7,000 feet, above usual snowline.")
