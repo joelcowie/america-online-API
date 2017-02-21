@@ -136,7 +136,7 @@
 # Park.find(48).update(image_url:'http://i.imgur.com/r3W4iJA.jpg')
 # Park.find(49).update(image_url:'http://i.imgur.com/yyX6BjF.jpg')
 # Park.find(50).update(image_url:'http://i.imgur.com/4RgIfIs.jpg')
-# 
+#
 #
 # # missing parks
 # Park.create(name: 'American Samoa National Park', states: 'Pacific Ocean', latLong: '', description: '', directionsInfo: '', directionsUrl: '', url: '', weatherInfo: '', image_url: 'http://static1.businessinsider.com/image/52370fcfeab8ea4c2c8ca725-1200/american-samoa-national-park-american-samoa.jpg')
@@ -148,3 +148,6 @@
 # Park.create(name: 'Lake Clark National Park', states: 'Alaska', latLong: '', description: '', directionsInfo: '', directionsUrl: '', url: '', weatherInfo: '', image_url: 'https://www.princesslodges.com/wp-content/uploads/2011/11/lake-clark-national-park.jpg')
 # Park.create(name: 'Redwood National Park', states: 'California', latLong: '', description: '', directionsInfo: '', directionsUrl: '', url: '', weatherInfo: '', image_url: 'http://s2.thingpic.com/images/6e/i4jMYrcWeAG9ZiwyHj2YLYRX.jpeg')
 # Park.create(name: 'Wrangell-St. Elias National Park', states: 'Alaska', latLong: '', description: '', directionsInfo: '', directionsUrl: '', url: '', weatherInfo: '', image_url: 'http://media.web.britannica.com/eb-media/17/103217-050-C89AF4B2.jpg')
+
+
+Park.find(50).update(description: 'Follow the paths where ancient native people and pioneers walked. Gaze up at massive sandstone cliffs of cream, pink, and red that soar into a brilliant blue sky. Experience wilderness in a narrow slot canyon. Zion’s unique array of plants and animals will enchant you as you absorb the rich history of the past and enjoy the excitement of present day adventures.')

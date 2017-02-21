@@ -10,9 +10,7 @@ class Api::V1::TripsController < ApplicationController
   end
 
   def show
-    # if params[:jwt]['user_id']
-      user_id = Auth.decode(params[:jwt])['user_id']
-    # end
+    user_id = Auth.decode(params[:jwt])['user_id']
     @user = User.find(user_id)
     @trip = @user.trips.last
     if @trip
