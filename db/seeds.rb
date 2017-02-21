@@ -1,3 +1,5 @@
+#pics hosted at http://imgur.com/a/3IfVZ
+
 # require 'json'
 #
 # adapter = NationalParkAdapter.new
