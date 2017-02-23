@@ -12,9 +12,9 @@ class Api::V1::TripsController < ApplicationController
   def show
     user_id = Auth.decode(params[:jwt])['user_id']
     @user = User.find(user_id)
-    @trip = @user.trips.last
-    if @trip
-      render json: {trip: @trip, parks: @trip.parks}
+    @trips = @user.trips
+    if @trips
+      render json: @trips
     end
   end
 
