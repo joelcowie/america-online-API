@@ -1,24 +1,33 @@
-# README
+# America Online
+![home-page]
+[America Online][america-online]
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Summary
 
-Things you may want to cover:
+[America Online][america-online] is a single page web application built using Ruby on Rails, React, and Redux. It functions as a way to plan a trip and choose from all 59 U.S. National Parks. America Online allows users to: 
 
-* Ruby version
+* Create an account
+* Log In/Log Out
+* Create and name a trip
+* Select and view a National Park
+* Add a Park to your trip list
+* Remove a Park from your trip list
 
-* System dependencies
+## Structure
 
-* Configuration
+#### Back end
 
-* Database creation
+America Online uses Ruby on Rails for a custom API and a postgreSQL database. 
 
-* Database initialization
+#### Front end
 
-* How to run the test suite
+The front end is built using React and Redux. React allows for split-second rendering of components and DOM changes which creates a seamless user interface. Redux serves as a way to effectively manage the app's state. 
 
-* Services (job queues, cache servers, search engines, etc.)
+## Future Roadmap
 
-* Deployment instructions
+* Maps integration
+* Route planning
+* Detailed park statistics
 
-* ...
+[america-online]: http://www.parks-explorer.herokuapp.com
+[home-page]: ./assets/images/home-page.png
