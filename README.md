@@ -1,5 +1,4 @@
-# America Online
-![home-page]
+# America Online - Back end API
 [America Online][america-online]
 
 ## Summary
